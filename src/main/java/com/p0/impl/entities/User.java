@@ -1,5 +1,6 @@
 package com.p0.impl.entities;
 
+import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -10,6 +11,7 @@ import java.util.List;
 @Table(name = "users")
 @EqualsAndHashCode
 @Data
+@Builder
 public class User extends BaseEntity {
 
     @Column(name = "name", nullable = false)
